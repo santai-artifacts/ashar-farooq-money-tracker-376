@@ -10,20 +10,20 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #f4f6fb;
-      --card: #ffffff;
-      --primary: #5046e4;
-      --primary-hover: #4338ca;
-      --primary-light: #eef2ff;
-      --text: #111827;
-      --text-2: #374151;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --red: #ef4444;
-      --red-light: #fef2f2;
+      --bg: #0d0e14;
+      --card: #13141d;
+      --primary: #7c6ef5;
+      --primary-hover: #6a5ce8;
+      --primary-light: #1e1b3a;
+      --text: #e8e9f0;
+      --text-2: #c4c5d4;
+      --muted: #5e6077;
+      --border: #1f2030;
+      --red: #f87171;
+      --red-light: #2a1a1a;
       --radius: 14px;
-      --shadow: 0 1px 3px rgba(0,0,0,.07), 0 4px 16px rgba(0,0,0,.05);
-      --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+      --shadow: 0 1px 3px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.5);
     }
 
     body {
@@ -143,13 +143,14 @@
       font-size: 14px;
       font-family: inherit;
       color: var(--text);
-      background: var(--bg);
+      background: #0d0e14;
       transition: border-color .15s, box-shadow .15s;
       outline: none;
+      color-scheme: dark;
     }
     input:focus, select:focus {
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(80,70,228,.1);
+      box-shadow: 0 0 0 3px rgba(124,110,245,.15);
     }
     .amount-row {
       position: relative;
@@ -472,14 +473,14 @@
 
 <script>
   const CATS = {
-    'Food & Dining':  { icon: '🍕', color: '#f59e0b', bg: '#fffbeb' },
-    'Transport':      { icon: '🚗', color: '#3b82f6', bg: '#eff6ff' },
-    'Shopping':       { icon: '🛍️', color: '#8b5cf6', bg: '#f5f3ff' },
-    'Entertainment':  { icon: '🎬', color: '#ec4899', bg: '#fdf2f8' },
-    'Health':         { icon: '💊', color: '#10b981', bg: '#f0fdf4' },
-    'Housing':        { icon: '🏠', color: '#14b8a6', bg: '#f0fdfa' },
-    'Education':      { icon: '📚', color: '#6366f1', bg: '#eef2ff' },
-    'Other':          { icon: '📦', color: '#9ca3af', bg: '#f9fafb' },
+    'Food & Dining':  { icon: '🍕', color: '#f59e0b', bg: '#2a1f08' },
+    'Transport':      { icon: '🚗', color: '#3b82f6', bg: '#0d1a2e' },
+    'Shopping':       { icon: '🛍️', color: '#8b5cf6', bg: '#1c1530' },
+    'Entertainment':  { icon: '🎬', color: '#ec4899', bg: '#2a0f1e' },
+    'Health':         { icon: '💊', color: '#10b981', bg: '#0a2018' },
+    'Housing':        { icon: '🏠', color: '#14b8a6', bg: '#091e1c' },
+    'Education':      { icon: '📚', color: '#6366f1', bg: '#141530' },
+    'Other':          { icon: '📦', color: '#9ca3af', bg: '#1a1b22' },
   };
 
   function fmt(n) {
